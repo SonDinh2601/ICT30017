@@ -11,11 +11,19 @@
 
     <?php include ('components/header-nav.inc.php'); ?>
 
+
+
     <!-- Hero Section Start-->
     <section class="hero-section">
     </section>
     <!-- Hero Section End -->
 
+    <!-- Database Connection -->
+    <?php 
+    include('functions/connect.php');
+    $conn->close();
+    ?>
+    
     <?php include ('components/footer.inc.php'); ?>
 
     <?php include ('templates/script.php'); ?>
