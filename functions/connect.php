@@ -1,6 +1,6 @@
 <?php
 // Establish connection to Database
-require_once ("components/settings.php");
+require_once ("functions/settings.php");
 $conn = @new mysqli($host, $username, $password);
 
 if ($conn->connect_error) {

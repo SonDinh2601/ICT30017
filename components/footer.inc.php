@@ -25,9 +25,6 @@
                 </form>
             </div>
         </div>
-
-        <!-- Subscribe Button Popup -->
-
     </div>
 </section>
 
