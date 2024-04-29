@@ -19,14 +19,18 @@
                             <input type="email" class="form-control" placeholder="Your email here">
                         </div>
                         <div class="col-md-4 mb-4">
-                            <input type="submit" class="btn btn-secondary w-100" value="Subscribe">
+                            <input type="submit" class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#subscribed#" value="Subscribe">
                         </div>
                     </div>
                 </form>
             </div>
         </div>
+
+        <!-- Subscribe Button Popup -->
+
     </div>
 </section>
+
 <footer class="site-footer">
     <div class="container-fluid">
         <div class="row mb-5">
@@ -92,7 +96,5 @@
         </div>
     </div>
 </footer>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
-</html>
+<!-- Bootstrap JS
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
