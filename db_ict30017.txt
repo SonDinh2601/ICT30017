@@ -1,0 +1,82 @@
+CREATE TABLE facility (
+    facilityId int AUTO_INCREMENT NOT NULL,
+    facilityName varchar(250) NOT NULL,
+    facilityAddress varchar(250) NOT NULL,
+    address varchar(250),
+    city varchar(250) NOT NULL,
+    state varchar(250) NOT NULL,
+    zipCode int NOT NULL,
+    contactNumber int NOT NULL,
+    PRIMARY KEY (facilityId)
+);
+
+CREATE TABLE inventory (
+    itemId int AUTO_INCREMENT NOT NULL, 
+    itemName varchar(250) NOT NULL,
+    description varchar(250) NOT NULL,
+    quantityLeft int NOT NULL,
+    unitPrice int NOT NULL,
+    facilityId int NOT NULL,
+    PRIMARY KEY (itemId),
+    FOREIGN KEY (facilityId) REFERENCES facility(facilityId)
+);
+
+CREATE TABLE staff (
+    staffId int AUTO_INCREMENT NOT NULL,
+    name varchar(250) NOT NULL,
+    username varchar(250) NOT NULL,
+    password varchar(250) NOT NULL,
+    email varchar(250) NOT NULL,
+    phoneNumber int NOT NULL,
+    gender varchar(5) NOT NULL,
+    dateOfBirth date NOT NULL,
+    PRIMARY KEY (staffId)
+);
+
+CREATE TABLE users (
+    userId int AUTO_INCREMENT NOT NULL,
+    name varchar(250) NOT NULL,
+    username varchar(250) NOT NULL,
+    password varchar(250) NOT NULL,
+    email varchar(250) NOT NULL,
+    phoneNumber int NOT NULL,
+    gender varchar(5) NOT NULL,
+    dateOfBirth date NOT NULL,
+    PRIMARY KEY (userId)
+);
+
+CREATE TABLE user_sos(
+    name varchar(250) NOT NULL,
+    description varchar(250) NOT NULL,
+    phoneNumber int NOT NULL,
+    address varchar(250) NOT NULL,
+    email varchar(250) NOT NULL,
+    userId int NOT NULL,
+    FOREIGN KEY (userId) REFERENCES users(userId)
+);
+
+CREATE TABLE service (
+    serviceId int AUTO_INCREMENT NOT NULL,
+    serviceName varchar(250) NOT NULL,
+    description varchar(250) NOT NULL,
+    facilityId int NOT NULL,
+    staffId int NOT NULL,
+    PRIMARY KEY (serviceId),
+    FOREIGN KEY (facilityId) REFERENCES facility(facilityId),
+    FOREIGN KEY (staffId) REFERENCES staff(staffId)
+);
+
+CREATE TABLE schedules (
+    scheduleId int AUTO_INCREMENT NOT NULL,
+    facilityId int NOT NULL,
+    serviceId int NOT NULL,
+    staffId int NOT NULL,
+    userId int NOT NULL,
+    startTime datetime NOT NULL,
+    endTime datetime NOT NULL,
+    PRIMARY KEY (scheduleId),
+    FOREIGN KEY (facilityId) REFERENCES facility(facilityId),
+    FOREIGN KEY (serviceId) REFERENCES service(serviceId),
+    FOREIGN KEY (staffId) REFERENCES staff(staffId),
+    FOREIGN KEY (userId) REFERENCES users(userId)
+);
