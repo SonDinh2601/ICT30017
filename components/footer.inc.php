@@ -19,7 +19,7 @@
                             <input type="email" class="form-control" placeholder="Your email here">
                         </div>
                         <div class="col-md-4 mb-4">
-                            <input type="submit" class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#subscribed#" value="Subscribe">
+                            <input type="submit" class="btn btn-subscribe w-100" data-bs-toggle="modal" data-bs-target="#subscribed#" value="Subscribe">
                         </div>
                     </div>
                 </form>
