@@ -126,7 +126,7 @@
     box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
 }
 
-.btn.btn-secondary {
+.btn.btn-subscribe {
     color: white;
     border-width: 2px;
     background: #121481;
@@ -166,4 +166,26 @@
 .site-footer footer-link li {
     line-height: 1.5;
     margin-bottom: 15px;
+}
+
+/* Staff List */
+.title {
+    margin-top: 100px; /* Avoid nav collision */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.staff-table {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.staff-table th {
+    background-color: #364770;
+    margin: 5px 0;
+    color: #fff !important;
+}
+
+.staff-table th, td {
+    font-size: smaller;
 }

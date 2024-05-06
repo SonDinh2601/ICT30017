@@ -11,8 +11,6 @@
 
     <?php include ('components/header-nav.inc.php'); ?>
 
-
-
     <!-- Hero Section Start-->
     <section class="hero-section">
     </section>

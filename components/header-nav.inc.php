@@ -22,7 +22,7 @@
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Staff Management</a>
+                        <a class="nav-link" href="staff_list.php">Staff Management</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Service Management</a>
@@ -31,7 +31,7 @@
                         <a class="nav-link" href="#">Client Management</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Facility Management</a>
+                        <a class="nav-link" href="facility_management.php">Facility Management</a>
                     </li>
                 </ul>
             </div>
