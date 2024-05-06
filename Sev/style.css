@@ -1,0 +1,169 @@
+
+/* nav bar */
+.logo {
+    transform: translateY(-1px);
+}
+.navbar {
+    background: white;
+    height: 70px;
+    margin: 20px;
+    border-radius: 8px;
+    padding: 0.5rem;
+
+}
+
+.navbar-brand {
+    font-weight: 500;
+    font-size: 24px;
+    color: #364770;
+    transition: 0.3s color;
+}
+
+.login-btn {
+    background-color: #364770;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-btn:hover {
+    background-color: #496F9E;
+    color: white;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler:focus, btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+
+@media (min-width: 1000px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 1px;
+        background-color: #364770;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+
+/* hero-section */
+.hero-section {
+    background: url("pic/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* footer */
+
+/* Get News & Updates */
+.subsribe-section {
+    padding: 2em 0;
+}
+
+.form-control {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    height: 50px;
+}
+
+.form-control:focus {
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.form-control:focus, form-control:active {
+    outline: none;
+}
+
+.btn {
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn.btn-secondary {
+    color: white;
+    border-width: 2px;
+    background: #121481;
+    border-color: #121481;
+    padding: 10px;
+
+}
+
+.site-footer {
+    padding: 2em 0;
+    background: #364770;
+    font-size: 14px;
+    color: #868e96;
+}
+
+.site-footer p:last-child {
+    margin-bottom: 0;
+}
+
+.site-footer a {
+    color: #FFEAE3;
+    border-bottom: 1px solid transparent;
+}
+
+.site-footer a:hover {
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site-footer h2 {
+    font-size: 22px;
+    margin-bottom: 28px;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+.site-footer footer-link li {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
