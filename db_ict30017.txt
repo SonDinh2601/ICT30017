@@ -28,7 +28,7 @@ CREATE TABLE staff (
     password varchar(250) NOT NULL,
     email varchar(250) NOT NULL,
     phoneNumber int NOT NULL,
-    gender varchar(5) NOT NULL,
+    gender varchar(6) NOT NULL,
     dateOfBirth date NOT NULL,
     PRIMARY KEY (staffId)
 );
@@ -40,7 +40,7 @@ CREATE TABLE users (
     password varchar(250) NOT NULL,
     email varchar(250) NOT NULL,
     phoneNumber int NOT NULL,
-    gender varchar(5) NOT NULL,
+    gender varchar(6) NOT NULL,
     dateOfBirth date NOT NULL,
     PRIMARY KEY (userId)
 );
