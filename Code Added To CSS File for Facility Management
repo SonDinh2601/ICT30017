@@ -1,0 +1,39 @@
+.card-container {
+  display: flex;
+  justify-content: space-between; 
+    align-items: flex-start; 
+    padding-bottom: 5rem;
+    justify-content: center; 
+    
+}
+
+.card:first-child {
+    margin-left: 2rem; 
+}
+
+.card {
+    flex: 0 0 calc(30% - 1rem); 
+    margin-right: 2rem; 
+    margin-bottom: 1rem; 
+    padding: 20px; 
+    background-color: #364770; 
+    color: white;
+}
+
+.card-container .card .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.hero-section {
+    position: absolute;
+    z-index: -1; 
+}
+
+.card .card-body .btn {
+    display: block; 
+    margin: 0 auto; 
+}
+.card .card-body h2 {
+    text-align: center; 
+}
