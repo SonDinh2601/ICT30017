@@ -1,15 +1,14 @@
-
 /* nav bar */
 .logo {
     transform: translateY(-1px);
 }
+
 .navbar {
     background: white;
     height: 70px;
     margin: 20px;
     border-radius: 8px;
     padding: 0.5rem;
-
 }
 
 .navbar-brand {
@@ -39,7 +38,8 @@
     font-size: 1.5rem;
 }
 
-.navbar-toggler:focus, btn-close:focus {
+.navbar-toggler:focus,
+btn-close:focus {
     box-shadow: none;
     outline: none;
 }
@@ -50,7 +50,8 @@
     position: relative;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: #000;
 }
 
@@ -68,7 +69,8 @@
         transition: 0.3s ease-in-out;
     }
 
-    .nav-link:hover::before, .nav-link.active::before {
+    .nav-link:hover::before,
+    .nav-link.active::before {
         width: 100%;
         visibility: visible;
     }
@@ -85,7 +87,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .hero-section::before {
@@ -97,6 +98,188 @@
     bottom: 0;
     left: 0;
 }
+
+/* Service Management */
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap'); */
+
+.service-management {
+    padding: 100px 20px;
+    box-sizing: border-box;
+    /* font-family: 'Lexend', 'sans-serif'; */
+    color: #fff;
+}
+
+.container-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-back {
+    background-color: transparent;
+}
+
+.btn-manage {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.arrow-2 {
+    width: 23px;
+    height: 3px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.back-to-dashboard {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.search-services {
+    /* border: 1px solid #fff; */
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #808080;
+}
+
+.container-4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-5 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.service-box {
+    background-color: #364770;
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.service-title {
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.manage {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Facility Management */
+.hero-blur {
+    position: absolute;
+    z-index: -1;
+    filter: blur(2px);
+    /* background-color: white;
+    background-image: linear-gradient(to bottom, transparent, #546879), url("pic/hero-bg.jpg");
+    background-repeat: no-repeat; */
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 5rem;
+    justify-content: center;
+}
+
+.card:first-child {
+    margin-left: 2rem;
+}
+
+.card {
+    flex: 0 0 calc(30% - 1rem);
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    padding: 20px;
+    background-color: #364770;
+    color: white;
+    width: 18rem;
+    height: 35rem;
+}
+
+.card-container .card .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card .card-body .btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+/* Staff List */
+.title {
+    margin-top: 100px;
+    /* Avoid nav collision */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.staff-client-table {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.staff-client-table th {
+    background-color: #364770;
+    margin: 5px 0;
+    color: #fff !important;
+}
+
+.staff-client-table th,
+td {
+    font-size: smaller;
+}
+
+div.add {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+.btn-add {
+    background-color: #364770;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Client List */
+
 
 /* footer */
 
@@ -117,7 +300,8 @@
     box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
 }
 
-.form-control:focus, form-control:active {
+.form-control:focus,
+form-control:active {
     outline: none;
 }
 
@@ -166,26 +350,4 @@
 .site-footer footer-link li {
     line-height: 1.5;
     margin-bottom: 15px;
-}
-
-/* Staff List */
-.title {
-    margin-top: 100px; /* Avoid nav collision */
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.staff-table {
-    width: 90%;
-    margin-left: 5%;
-}
-
-.staff-table th {
-    background-color: #364770;
-    margin: 5px 0;
-    color: #fff !important;
-}
-
-.staff-table th, td {
-    font-size: smaller;
 }

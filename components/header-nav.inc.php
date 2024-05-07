@@ -22,16 +22,16 @@
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="services.php">Service Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facilities.php">Facility Management</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="staff_list.php">Staff Management</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Service Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Client Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="facility_management.php">Facility Management</a>
+                        <a class="nav-link" href="client_list.php">Client Management</a>
                     </li>
                 </ul>
             </div>
