@@ -59,8 +59,12 @@ else {
         <h2>Staff Management</h2>
     </div>
 
-    <div class="staff-table">
-        <p><a href="staff_add.php"></a></p>
+    
+    <div class="staff-client-table">
+        <div class="add">
+            <a class="btn btn-sm btn-add" href="staff_add.php">+ Add Staff</a>
+        </div> <!-- staff_add.php not yet created -->
+
         <table class="table table-striped">
             <!-- Bootstrap row -->
             <tr class="row"> 
