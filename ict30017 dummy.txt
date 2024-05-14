@@ -1,0 +1,57 @@
+-- Generated with ChatGPT
+
+-- Dummy data for facility table
+INSERT INTO facility (facilityName, facilityAddress, address, city, state, zipCode, contactNumber) VALUES
+('Sunrise Senior Living', '123 Main St', 'Apt 101', 'Anytown', 'CA', 12345, 1234567890),
+('Golden Years Assisted Living', '456 Elm St', 'Unit B', 'Smalltown', 'NY', 54321, 9876543210),
+('Silver Oaks Nursing Home', '789 Oak St', 'Suite 3', 'Villagetown', 'TX', 67890, 1357924680),
+('Maplewood Retirement Community', '101 Maple Ave', 'Suite 10', 'Maple City', 'WA', 54321, 2468135790),
+('Pinecrest Assisted Living', '777 Pine St', 'Apt 5', 'Forestville', 'OR', 98765, 3698521470);
+
+-- Dummy data for inventory table
+INSERT INTO inventory (itemName, description, quantityLeft, unitPrice, facilityId) VALUES
+('Wheelchair', 'Lightweight wheelchair for mobility assistance', 10, 250, 1),
+('Medicine - Aspirin', 'Pain relief medicine', 100, 5, 2),
+('Adult Diapers', 'Disposable adult diapers', 50, 15, 3),
+('Oxygen Tanks', 'Medical oxygen tanks', 20, 200, 4),
+('Blood Pressure Monitor', 'Device to measure blood pressure', 5, 100, 5);
+
+-- Dummy data for staff table
+INSERT INTO staff (name, username, password, email, phoneNumber, gender, dateOfBirth) VALUES
+('John Doe', 'john.doe', 'john123', 'john.doe@example.com', 1234567890, 'Male', '1980-05-15'),
+('Jane Smith', 'jane.smith', 'jane123', 'jane.smith@example.com', 9876543210, 'Female', '1990-10-20'),
+('Michael Johnson', 'michael.johnson', 'michael123', 'michael.johnson@example.com', 1357924680, 'Male', '1975-02-28'),
+('Emily Brown', 'emily.brown', 'emily123', 'emily.brown@example.com', 5556667777, 'Female', '1988-08-08'),
+('Daniel Wilson', 'daniel.wilson', 'daniel123', 'daniel.wilson@example.com', 9998887777, 'Male', '1983-11-11');
+
+-- Dummy data for users table
+INSERT INTO users (name, username, password, email, phoneNumber, gender, dateOfBirth) VALUES
+('Shelley Higgins', 's.higgins', 'shigginspass', 'shelley.higgins@example.com', 1112223333, 'Female', '1965-08-10'),
+('Steven King', 'steven.king', 'skingpass', 'steven.king@example.com', 4445556666, 'Male', '1978-04-25'),
+('Eve Grant', 'eve.grant', 'egrantpass', 'eve.grant@example.com', 7778889999, 'Female', '1950-12-31'),
+('Chris Taylor', 'chris.taylor', 'ctaylorpass', 'chris.taylor@example.com', 3332221111, 'Male', '1960-06-15'),
+('Sophia Garcia', 'sophia.garcia', 'sgarciapass', 'sophia.garcia@example.com', 6665554444, 'Female', '1973-09-20');
+
+-- Dummy data for user_sos table
+INSERT INTO user_sos (name, description, phoneNumber, address, email, userId) VALUES
+('Alice Higgins', 'Emergency contact for Shelley', 1112223333, '789 Maple St', 'emergency.shelley@example.com', 1),
+('Bob King', 'Emergency contact for Steven', 4445556666, '321 Pine St', 'emergency.steven@example.com', 2),
+('Kim Grant', 'Emergency contact for Eve', 7778889999, '456 Birch St', 'emergency.eve@example.com', 3),
+('Curtis Taylor', 'Emergency contact for Chris', 3332221111, '101 Cedar St', 'emergency.chris@example.com', 4),
+('Neena Garcia', 'Emergency contact for Sophia', 6665554444, '654 Walnut St', 'emergency.sophia@example.com', 5);
+
+-- Dummy data for service table
+INSERT INTO service (serviceName, description, facilityId, staffId) VALUES
+('Medical Checkup', 'Routine medical examination', 1, 1),
+('Physical Therapy', 'Rehabilitation exercises', 2, 2),
+('Meal Preparation', 'Meal planning and cooking', 3, 3),
+('Companionship', 'Social interaction and support', 4, 4),
+('Housekeeping', 'Cleaning and organizing living spaces', 5, 5);
+
+-- Dummy data for schedules table
+INSERT INTO schedules (facilityId, serviceId, staffId, userId, startTime, endTime) VALUES
+(1, 1, 1, 1, '2024-04-15 08:00:00', '2024-04-15 09:00:00'),
+(2, 2, 2, 2, '2024-04-16 10:00:00', '2024-04-16 11:00:00'),
+(3, 3, 3, 3, '2024-04-17 12:00:00', '2024-04-17 13:00:00'),
+(4, 4, 4, 4, '2024-04-18 14:00:00', '2024-04-18 15:00:00'),
+(5, 5, 5, 5, '2024-04-19 16:00:00', '2024-04-19 17:00:00');

@@ -126,7 +126,7 @@
     box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.2) !important;
 }
 
-.btn.btn-secondary {
+.btn.btn-subscribe {
     color: white;
     border-width: 2px;
     background: #121481;
@@ -143,7 +143,7 @@
 }
 
 .site-footer p:last-child {
-    margin-bottem: 0;
+    margin-bottom: 0;
 }
 
 .site-footer a {
@@ -168,4 +168,67 @@
     margin-bottom: 15px;
 }
 
+/* Staff List */
+.title {
+    margin-top: 100px; /* Avoid nav collision */
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.staff-table {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.staff-table th {
+    background-color: #364770;
+    margin: 5px 0;
+    color: #fff !important;
+}
+
+.staff-table th, td {
+    font-size: smaller;
+}
+
+/* Login Page */
+
+/*Left Box*/
+.left-box {
+    background: lightblue;
+    background-image: url("pic/login/login_1.jpg");
+    background-size: 220%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Box area*/
+.box-area {
+    width: 930px;
+}
+
+/*Right box*/
+.right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+/*Place holder*/
+::placeholder {
+    font-size: 16px;
+}
+
+/*Small screen*/
+@media only screen and (max-width: 768px) {
+
+    .box-area{
+        margin: 0 10px;
+    }
+
+    .left-box{
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .right-box {
+        padding: 20px;
+    }
+}
