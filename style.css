@@ -189,3 +189,46 @@
 .staff-table th, td {
     font-size: smaller;
 }
+
+/* Login Page */
+
+/*Left Box*/
+.left-box {
+    background: lightblue;
+    background-image: url("pic/login/login_1.jpg");
+    background-size: 220%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Box area*/
+.box-area {
+    width: 930px;
+}
+
+/*Right box*/
+.right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+/*Place holder*/
+::placeholder {
+    font-size: 16px;
+}
+
+/*Small screen*/
+@media only screen and (max-width: 768px) {
+
+    .box-area{
+        margin: 0 10px;
+    }
+
+    .left-box{
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .right-box {
+        padding: 20px;
+    }
+}
